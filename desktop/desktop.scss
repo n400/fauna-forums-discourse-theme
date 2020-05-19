@@ -1,0 +1,152 @@
+
+// NEW STYLES
+
+html {
+    font-family: 'acumin-pro', Helvetica, sans-serif;
+      font-size: 16px;
+    color: #2c3160;
+  }
+  button, 
+  .modal-footer .btn[href],
+  .btn, input,
+  .list-controls .combo-box .combo-box-header{
+      &:focus{
+          outline:none;
+      }
+      border-radius:4px;
+      min-height: 36px;
+      padding: 0 12px;
+      display: inline-flex;
+      align-items: center;
+  }
+  
+  h1,
+  .suggested-topics-message { font-weight: 500;}
+  
+  h2,h3,h4,h5{
+      font-weight: 600;
+  }
+  
+  
+  .btn, 
+  .nav-pills>li a.active{
+      background: transparent;
+      color: #6474af;
+      .d-icon{
+          color:#6474af;
+      }
+      &:hover{
+          color: #6474af;
+          background: transparent;
+          cursor:default;
+      }
+  }
+  .nav-pills>li>a{
+          color: #3642ce;
+      font-size: 1rem;
+  }
+  .nav-pills>li>a:hover,
+  .discourse-no-touch .btn:hover{
+      background: #eff0f6;
+      color: #3642ce;
+      cursor:pointer;
+      .d-icon{
+          color: #3642ce;
+      }
+  }
+  
+  
+  .btn-primary,
+  button[aria-label="New Topic"],
+  button[aria-label="Open Draft"]{
+      background:#323fcb;
+      color:rgba(255,255,255,.9);
+      .d-icon{
+          color:rgba(255,255,255,.9);
+      }
+  }
+  
+  .list-controls .btn{
+      font-size:initial;
+  }
+  
+  .badge-wrapper,
+  .category-name{
+      font-weight: 500;
+  }
+  
+  .d-button-label{
+          position: relative;
+      top: -1px;
+  }
+  
+  .category-logo.aspect-image{
+      max-width: 40px;
+  }
+  
+  
+  
+  .suggested-topics{
+      background: transparent;
+      padding-top: 50px;
+      .suggested-topics-title{
+          font-size: 16px;
+          font-weight: normal;
+      }
+  }
+  
+  .select-kit .select-kit-header .caret-icon.d-icon-caret-right{
+      padding-left: 2px;
+      padding-bottom: 8px;
+      transform: rotate(90deg);
+  }
+  
+  .composer-popup {
+      background: #ffffe6;
+  }
+  
+  .topic-list th:first-of-type{
+      display: flex;
+      align-items: center;
+  }
+  .topic-list button.bulk-select,
+  .categories-list .category h3 .d-icon, .categories-list .category h4 .d-icon{
+      margin-right: 10px;
+  }
+  .extra-info-wrapper .header-title {
+      font-size: 1.17em;
+  }
+  
+  .badge-wrapper{
+      font-size: 1em;
+  }
+  
+  .topic-list-main-link, .topic-list .main-link, .latest-topic-list-item .main-link{
+  font-size: initial;
+  }
+  
+  // ADMIN
+  .admin-controls .nav-pills>li a.active{ color: white }
+  
+  //There must be a better way
+  .topic-list .creator .relative-date, 
+  .topic-list .creator [data-user-card], 
+  // .topic-list .editor, 
+  .poster-avatar { display: none; }
+  .cakeday-link {display: none !important;}
+  // .menu-container-general-links {display: none !important;}
+  button[aria-label="Log In"] .fa.d-icon.d-icon-user.svg-icon.svg-string{
+      display: none; //temp fix for weird bug that causes signup/login buttons to be misaligned when one has an icon
+  }
+  
+  
+  
+  .topic-list a.title:not(.badge-notification){
+      color: #3642ce !important;
+  //     font-family: 'acumin-pro', Helvetica, sans-serif;
+      font-weight:500 !important;
+  }
+  .topic-list-item.visited a.title:not(.badge-notification){
+      color: #6474af !important;
+      font-weight:400 !important;
+  }

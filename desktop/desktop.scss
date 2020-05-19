@@ -134,12 +134,32 @@ html {
       display: none; //temp fix for weird bug that causes signup/login buttons to be misaligned when one has an icon
 }
   
-//   .topic-list a.title:not(.badge-notification){
-//       color: #3642ce !important;
-//   //     font-family: 'acumin-pro', Helvetica, sans-serif;
-//       font-weight:500 !important;
-//   }
-//   .topic-list-item.visited a.title:not(.badge-notification){
-//       color: #6474af !important;
-//       font-weight:400 !important;
-//   }
+//TAGS
+.discourse-tag {
+    display: flex; flex-wrap: wrap;
+    .box { border-radius: 4px; margin: 0 3px 3px 0}
+}
+
+[data-tag-name='fql']{ background: #2196F3} 
+[data-tag-name='graphql']{ background: #03A9F4 } 
+[data-tag-name='authentication']{ background: #00BCD4 } 
+[data-tag-name='dashboard']{ background: #009688 } 
+[data-tag-name='streaming']{ background: #4CAF50 } 
+[data-tag-name='roadmap']{ background: #8BC34A } 
+
+//     '#2196F3',
+//     '#03A9F4',
+//     '#00BCD4',
+//     '#009688',
+//     '#4CAF50',
+//     '#8BC34A',
+//     '#CDDC39',
+//     '#FFEB3B',
+//     '#FFC107',
+//     '#FF9800',
+//     '#FF5722',
+//     '#F44336',
+//     '#E91E63',
+//     '#9C27B0',
+//     '#673AB7',
+//     '#3F51B5'

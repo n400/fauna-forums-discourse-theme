@@ -129,12 +129,10 @@ html {
 //   .topic-list .creator [data-user-card], 
 //   .poster-avatar { display: none; }
   .cakeday-link {display: none !important;}
-  // .menu-container-general-links {display: none !important;}
+  .menu-container-general-links {display: none !important;}
   button[aria-label="Log In"] .fa.d-icon.d-icon-user.svg-icon.svg-string{
       display: none; //temp fix for weird bug that causes signup/login buttons to be misaligned when one has an icon
-  }
-  
-  
+}
   
 //   .topic-list a.title:not(.badge-notification){
 //       color: #3642ce !important;

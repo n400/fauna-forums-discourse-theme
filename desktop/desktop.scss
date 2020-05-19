@@ -1,6 +1,8 @@
 
 // NEW STYLES
 
+$lightest-grey: #eff0f6;
+
 html {
     font-family: 'acumin-pro', Helvetica, sans-serif;
       font-size: 16px;
@@ -46,7 +48,7 @@ html {
   }
   .nav-pills>li>a:hover,
   .discourse-no-touch .btn:hover{
-      background: #eff0f6;
+      background: $lightest-grey;
       color: #3642ce;
       cursor:pointer;
       .d-icon{
@@ -128,8 +130,14 @@ html {
 //   .topic-list .creator .relative-date, 
 //   .topic-list .creator [data-user-card], 
 //   .poster-avatar { display: none; }
+
+//MENU
   .cakeday-link {display: none !important;}
   .menu-container-general-links {display: none !important;}
+.menu-panel li a.widget-link:hover, .menu-panel li a.widget-link:focus, .menu-panel li.heading a.widget-link:hover, .menu-panel li.heading a.widget-link:focus,
+.category-name:hover {
+    background: $lightest-grey;
+}
   button[aria-label="Log In"] .fa.d-icon.d-icon-user.svg-icon.svg-string{
       display: none; //temp fix for weird bug that causes signup/login buttons to be misaligned when one has an icon
 }
@@ -146,7 +154,6 @@ html {
 [data-tag-name='dashboard']{ background: #009688 } 
 [data-tag-name='streaming']{ background: #4CAF50 } 
 [data-tag-name='roadmap']{ background: #8BC34A } 
-
 //     '#2196F3',
 //     '#03A9F4',
 //     '#00BCD4',

@@ -110,6 +110,12 @@ h1,
   .composer-popup {
       background: #ffffe6;
   }
+
+.topic-list td:first-of-type {
+    padding: 0 5px 12px 0;
+}
+.topic-list-main-link a.title, .topic-list .main-link a.title, .latest-topic-list-item .main-link a.title
+{display: inline-flex; padding: 12px 0 4px 0}
   
   .topic-list th:first-of-type{
       display: flex;
@@ -135,6 +141,10 @@ h1,
   .admin-controls .nav-pills>li a.active{ color: white }
 
 //MENU
+.menu-panel li a.widget-link, 
+.menu-panel li.heading a.widget-link {display: flex; align-items: center;
+    .menu-panel .badge-notification {margin-left:5px;}
+}
   .cakeday-link {display: none !important;}
   .menu-container-general-links {display: none !important;}
 .menu-panel li a.widget-link:hover, .menu-panel li a.widget-link:focus, .menu-panel li.heading a.widget-link:hover, .menu-panel li.heading a.widget-link:focus,

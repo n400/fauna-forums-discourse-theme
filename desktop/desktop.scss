@@ -142,14 +142,17 @@ html {
   button[aria-label="Log In"] .fa.d-icon.d-icon-user.svg-icon.svg-string{
       display: none; //temp fix for weird bug that causes signup/login buttons to be misaligned when one has an icon
 }
+
+//TOPIC LIST/S
+.topic-list th:first-of-type, .topic-list td:first-of-type {
+    padding-left: 0;
+}
   
 //TAGS
-.categories-and-latest .discourse-tags, .categories-and-top .discourse-tags {
-    display: flex; flex-wrap: wrap; flex-direction: row;
-    .discourse-tag.box { border-radius: $border-radius; margin: 0 3px 3px 0; color: rgba(255,255,255,.95);}
-}
+.categories-and-latest .discourse-tags, .categories-and-top .discourse-tags {display: flex; flex-wrap: wrap; flex-direction: row;}
+.discourse-tag.box { border-radius: $border-radius; margin: 0 3px 3px 0; color: rgba(255,255,255,.95);}
 
-[data-tag-name="fql"]{ background-color: #CDDC39 !important} 
+[data-tag-name="fql"]{ background-color: #3F51B5 !important} 
 [data-tag-name="graphql"]{ background-color: #03A9F4 !important} 
 [data-tag-name="authentication"]{ background-color: #00BCD4 !important} 
 [data-tag-name="dashboard"]{ background-color: #009688 !important} 

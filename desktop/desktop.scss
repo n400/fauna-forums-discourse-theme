@@ -135,7 +135,7 @@ html {
   .cakeday-link {display: none !important;}
   .menu-container-general-links {display: none !important;}
 .menu-panel li a.widget-link:hover, .menu-panel li a.widget-link:focus, .menu-panel li.heading a.widget-link:hover, .menu-panel li.heading a.widget-link:focus,
-.category-name:hover {
+.category-link:hover {
     background: $lightest-grey;
 }
   button[aria-label="Log In"] .fa.d-icon.d-icon-user.svg-icon.svg-string{
@@ -143,17 +143,17 @@ html {
 }
   
 //TAGS
-.discourse-tag {
-    display: flex; flex-wrap: wrap;
-    .box { border-radius: 4px; margin: 0 3px 3px 0}
+.discourse-tags {
+//     display: flex; flex-wrap: wrap;
+//     .discourse-tag.box { border-radius: 4px; margin: 0 3px 3px 0}
 }
 
-[data-tag-name='fql']{ background: #2196F3} 
-[data-tag-name='graphql']{ background: #03A9F4 } 
-[data-tag-name='authentication']{ background: #00BCD4 } 
-[data-tag-name='dashboard']{ background: #009688 } 
-[data-tag-name='streaming']{ background: #4CAF50 } 
-[data-tag-name='roadmap']{ background: #8BC34A } 
+[data-tag-name="fql"]{ background: #2196F3} 
+[data-tag-name="graphql"]{ background: #03A9F4 } 
+[data-tag-name="authentication"]{ background: #00BCD4 } 
+[data-tag-name="dashboard"]{ background: #009688 } 
+[data-tag-name="streaming"]{ background: #4CAF50 } 
+[data-tag-name="roadmap"]{ background: #8BC34A } 
 //     '#2196F3',
 //     '#03A9F4',
 //     '#00BCD4',

@@ -2,6 +2,7 @@
 // NEW STYLES
 
 $lightest-grey: #eff0f6;
+$border-radius: 0;
 
 html {
     font-family: 'acumin-pro', Helvetica, sans-serif;
@@ -15,7 +16,7 @@ html {
       &:focus{
           outline:none;
       }
-      border-radius:4px;
+      border-radius:$border-radius;
       min-height: 36px;
       padding: 0 12px;
       display: inline-flex;
@@ -135,25 +136,25 @@ html {
   .cakeday-link {display: none !important;}
   .menu-container-general-links {display: none !important;}
 .menu-panel li a.widget-link:hover, .menu-panel li a.widget-link:focus, .menu-panel li.heading a.widget-link:hover, .menu-panel li.heading a.widget-link:focus,
-.category-link:hover {
-    background: $lightest-grey;
+.menu-panel li.category-link:hover {
+    background-color: $lightest-grey;
 }
   button[aria-label="Log In"] .fa.d-icon.d-icon-user.svg-icon.svg-string{
       display: none; //temp fix for weird bug that causes signup/login buttons to be misaligned when one has an icon
 }
   
 //TAGS
-.discourse-tags {
-//     display: flex; flex-wrap: wrap;
-//     .discourse-tag.box { border-radius: 4px; margin: 0 3px 3px 0}
+.categories-and-latest .discourse-tags, .categories-and-top .discourse-tags {
+    display: flex; flex-wrap: wrap; flex-direction: row;
+    .discourse-tag.box { border-radius: $border-radius; margin: 0 3px 3px 0; color: rgba(255,255,255,.95);}
 }
 
-[data-tag-name="fql"]{ background: #2196F3} 
-[data-tag-name="graphql"]{ background: #03A9F4 } 
-[data-tag-name="authentication"]{ background: #00BCD4 } 
-[data-tag-name="dashboard"]{ background: #009688 } 
-[data-tag-name="streaming"]{ background: #4CAF50 } 
-[data-tag-name="roadmap"]{ background: #8BC34A } 
+[data-tag-name="fql"]{ background-color: #CDDC39 !important} 
+[data-tag-name="graphql"]{ background-color: #03A9F4 !important} 
+[data-tag-name="authentication"]{ background-color: #00BCD4 !important} 
+[data-tag-name="dashboard"]{ background-color: #009688 !important} 
+[data-tag-name="streaming"]{ background-color: #4CAF50 !important} 
+[data-tag-name="roadmap"]{ background-color: #8BC34A !important} 
 //     '#2196F3',
 //     '#03A9F4',
 //     '#00BCD4',

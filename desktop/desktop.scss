@@ -27,7 +27,6 @@ html {
       font-weight: 600;
   }
   
-  
   .btn, 
   .nav-pills>li a.active{
       background: transparent;
@@ -54,7 +53,6 @@ html {
           color: #3642ce;
       }
   }
-  
   
   .btn-primary,
   button[aria-label="New Topic"],
@@ -83,8 +81,6 @@ html {
   .category-logo.aspect-image{
       max-width: 40px;
   }
-  
-  
   
   .suggested-topics{
       background: transparent;
@@ -129,10 +125,9 @@ html {
   .admin-controls .nav-pills>li a.active{ color: white }
   
   //There must be a better way
-  .topic-list .creator .relative-date, 
-  .topic-list .creator [data-user-card], 
-  // .topic-list .editor, 
-  .poster-avatar { display: none; }
+//   .topic-list .creator .relative-date, 
+//   .topic-list .creator [data-user-card], 
+//   .poster-avatar { display: none; }
   .cakeday-link {display: none !important;}
   // .menu-container-general-links {display: none !important;}
   button[aria-label="Log In"] .fa.d-icon.d-icon-user.svg-icon.svg-string{
@@ -141,12 +136,12 @@ html {
   
   
   
-  .topic-list a.title:not(.badge-notification){
-      color: #3642ce !important;
-  //     font-family: 'acumin-pro', Helvetica, sans-serif;
-      font-weight:500 !important;
-  }
-  .topic-list-item.visited a.title:not(.badge-notification){
-      color: #6474af !important;
-      font-weight:400 !important;
-  }
+//   .topic-list a.title:not(.badge-notification){
+//       color: #3642ce !important;
+//   //     font-family: 'acumin-pro', Helvetica, sans-serif;
+//       font-weight:500 !important;
+//   }
+//   .topic-list-item.visited a.title:not(.badge-notification){
+//       color: #6474af !important;
+//       font-weight:400 !important;
+//   }

@@ -111,8 +111,13 @@ h1,
       background: #ffffe6;
   }
 
+.topic-list td, 
+.topic-list th { padding: 0; }
 .topic-list td:first-of-type {
     padding: 0 5px 12px 0;
+}
+.latest-topic-list-item {
+    padding: 0 0 12px 0;
 }
 .topic-list-main-link a.title, .topic-list .main-link a.title, .latest-topic-list-item .main-link a.title
 {display: inline-flex; padding: 12px 0 4px 0}

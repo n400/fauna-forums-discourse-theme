@@ -36,33 +36,40 @@ b,strong,.names span.first{font-weight:600;}
 #topic-title h1, .extra-info-wrapper{line-height: 1.35;}
   
 .btn, 
-.nav-pills>li a.active,
-nav.post-controls button, 
-nav.post-controls button .d-icon{
+.nav-pills>li a.active{
       background: transparent;
-      color: #6474af !important;
+      color: #6474af;
       .d-icon{
-          color:#6474af !important;
+          color:#6474af;
       }
       &:hover{
           color: #6474af;
           background: transparent;
           cursor:default;
       }
+}
+nav.post-controls button, 
+nav.post-controls button .d-icon{
+  color: #6474af !important;
+  .d-icon{
+      color:#6474af;
   }
-  .nav-pills>li>a{
-          color: #3642ce;
-      font-size: 1rem;
-  }
-  .nav-pills>li>a:hover,
-  .discourse-no-touch .btn:hover{
-      background: $lightest-grey;
+  opacity:.7;
+  &:hover{opacity:1}
+}
+.nav-pills>li>a{
       color: #3642ce;
-      cursor:pointer;
-      .d-icon{
-          color: #3642ce;
-      }
+  font-size: 1rem;
+}
+.nav-pills>li>a:hover,
+.discourse-no-touch .btn:hover{
+  background: $lightest-grey;
+  color: #3642ce;
+  cursor:pointer;
+  .d-icon{
+      color: #3642ce;
   }
+}
   
 .btn-primary,
 button[aria-label="New Topic"],

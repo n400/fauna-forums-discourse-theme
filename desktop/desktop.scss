@@ -61,9 +61,12 @@ h1,h2,h3,h4,h5,.suggested-topics-message { font-weight: 500;}
   
   .btn-primary,
   button[aria-label="New Topic"],
-  button[aria-label="Open Draft"]{
+  button[aria-label="Open Draft"],
+  button[aria-label="Reply"]{
       background:#323fcb;
       color:rgba(255,255,255,.9);
+      height: 44px;
+      padding:0 18px;
       .d-icon{
           color:rgba(255,255,255,.9);
       }

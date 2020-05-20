@@ -77,12 +77,7 @@ h1,h2,h3,h4,h5,.suggested-topics-message { font-weight: 500;}
   .list-controls .btn{
       font-size:initial;
   }
-  
-  .badge-wrapper,
-  .category-name{
-      font-weight: 500;
-  }
-  
+
   .d-button-label{}
   
   .category-logo.aspect-image{
@@ -131,10 +126,10 @@ h1,h2,h3,h4,h5,.suggested-topics-message { font-weight: 500;}
   }
 
   .badge-wrapper, .category-name{
-      font-size: $smallest-font;
       font-weight: inherit;
   }
-.menu-panel .category-name {font-size: 1rem;}
+.category-name{font-size:inherit;}
+// .menu-panel .category-name {font-size: 1rem;}
   
   .topic-list-main-link, .topic-list .main-link, .latest-topic-list-item .main-link{
   font-size: initial;
@@ -191,6 +186,9 @@ h1,h2,h3,h4,h5,.suggested-topics-message { font-weight: 500;}
         }
     }
 }
+
+//SUGGESTED TOPICS
+.suggested-topics-message{font-size:1rem;font-weight:inherit;}
 
 //TAGS
 .topic-list .link-bottom-line a.badge-wrapper.box, 

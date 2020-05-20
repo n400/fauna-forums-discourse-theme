@@ -208,6 +208,7 @@ h1,h2,h3,h4,h5,.suggested-topics-message { font-weight: 500;}
 .topic-timeline,
 .suggested-topics {
     opacity: .3;
+    transition: all 0.15s ease-out;
     &:hover {
         opacity: 1;
     }

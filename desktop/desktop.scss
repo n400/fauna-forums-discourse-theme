@@ -9,6 +9,7 @@ $font-color: #444444; //#2c3160;
 $font-family: 'acumin-pro', Helvetica, sans-serif;
 $box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 $smallest-font: 12px;
+$transition: all 0.15s ease-out;
 
 html {
     font-family: $font-family;
@@ -31,14 +32,17 @@ html {
   }
   
 h1,h2,h3,h4,h5,.suggested-topics-message { font-weight: 500;}
+b,strong,.names span.first{font-weight:600;}
 #topic-title h1, .extra-info-wrapper{line-height: 1.35;}
   
-  .btn, 
-  .nav-pills>li a.active{
+.btn, 
+.nav-pills>li a.active,
+nav.post-controls button, 
+nav.post-controls button .d-icon{
       background: transparent;
-      color: #6474af;
+      color: #6474af !important;
       .d-icon{
-          color:#6474af;
+          color:#6474af !important;
       }
       &:hover{
           color: #6474af;
@@ -60,26 +64,24 @@ h1,h2,h3,h4,h5,.suggested-topics-message { font-weight: 500;}
       }
   }
   
-  .btn-primary,
-  button[aria-label="New Topic"],
-  button[aria-label="Open Draft"],
-  button[aria-label="Reply"]{
-      background:#323fcb;
+.btn-primary,
+button[aria-label="New Topic"],
+button[aria-label="Open Draft"],
+button[aria-label="Reply"]{
+  background:#323fcb;
+  color:rgba(255,255,255,.9);
+  height: 44px;
+  padding:0 18px;
+  .d-icon{
       color:rgba(255,255,255,.9);
-      height: 44px;
-      padding:0 18px;
-      .d-icon{
-          color:rgba(255,255,255,.9);
-      }
-      &:hover{box-shadow: $box-shadow;}
   }
-  
-  .list-controls .btn{
-      font-size:initial;
-  }
+  &:hover{box-shadow: $box-shadow;}
+}
 
-  .d-button-label{}
-  
+.list-controls .btn{  font-size:inherit;}
+
+
+
   .category-logo.aspect-image{
       max-width: 40px;
   }
@@ -135,8 +137,17 @@ h1,h2,h3,h4,h5,.suggested-topics-message { font-weight: 500;}
   }
 
 //TOPIC PAGE
-.topic-title{
+#topic-title{
     .category-name{font-size:$smallest-font;}
+    h1 { font-size:24px; font-weight:400;
+        a.edit-topic {
+            color: #6474af;
+            font-size: .9em;
+            opacity: .4;
+            transition: $transition;
+            &:hover{opacity:1;}
+        }
+    }
 }
   
   // ADMIN

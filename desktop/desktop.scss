@@ -124,20 +124,12 @@ nav.post-controls button.create{
   }
 }
 
-
+//UNCATEGORIZED
 .list-controls .btn{  font-size:inherit;}
   .category-logo.aspect-image{
       max-width: 40px;
   }
   
-  .suggested-topics{
-      background: transparent;
-      padding-top: 50px;
-      .suggested-topics-title{
-          font-size: 16px;
-          font-weight: normal;
-      }
-  }
 .list-controls .combo-box .combo-box-header,
 .select-kit.combo-box .select-kit-header { border: $border; }
 .select-kit .select-kit-row {line-height:1.5;}
@@ -209,6 +201,12 @@ table th, table td {font-weight:inherit; color: $legible-grey;}
 //     color: #6e698a;
     &:hover{ color: $fauna-cta; }
 } 
+.latest-topic-list-item .main-link .top-row {
+    display: flex;
+    margin-bottom: 0;
+    line-height: 1.3;
+    font-size: 1.1487em;
+}
 
 //TOPIC PAGE
 #topic-title{
@@ -238,6 +236,14 @@ table th, table td {font-weight:inherit; color: $legible-grey;}
 }
 
 //SUGGESTED TOPICS & FOOTER
+.suggested-topics{
+  background: transparent;
+  padding-top: 50px;
+  .suggested-topics-title{
+      font-size: 16px;
+      font-weight: normal;
+  }
+}
 .suggested-topics-message{font-size:1rem;font-weight:inherit;}
 .footer-message h3{font-weight:inherit;}
 #topic-progress{ 

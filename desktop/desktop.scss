@@ -2,6 +2,7 @@
 // NEW STYLES
 @import url("https://use.typekit.net/gep4mwn.css");
 
+$legible-grey: #767676;
 $lightest-grey: #eff0f6;
 $border: 1px solid #e9e9e9;
 $border-radius: 0;
@@ -37,43 +38,34 @@ button,
   display: inline-flex;
   align-items: center;
 }
-.nav-pills>li a.active{
-      background: transparent;
-      color: $default-color;
-      .d-icon{
-          color:$default-color;
-      }
-      &:hover{
-          color: $default-color;
-          background: transparent;
-          cursor:default;
-      }
+
+// ADMIN
+.admin-controls .nav-pills>li a.active{ color: white }
+
+//NAV
+.d-header{
+    .extra-info-wrapper .header-title {font-size:1rem !important;}
+    .topic-statuses {display: none;}
+    .discourse-tags {display: flex; min-height: 25px;}
+    .extra-info-wrapper .categories-wrapper .badge-wrapper {position: relative;top: -1px;}
 }
-nav.post-controls button,
-nav.post-controls button.create{
-  color: $default-color;font-size:1rem;
-  .d-icon{
-      color: $default-color;
-  }
-  opacity:.7;
-  &:hover{opacity:1; color: $fauna-cta;}
+
+//MENU
+.menu-panel li a.widget-link, 
+.menu-panel li.heading a.widget-link {display: flex; align-items: center;
+    .menu-panel .badge-notification, .d-label {margin-left:5px;}
 }
-.discourse-no-touch .btn-flat:hover .d-icon, .discourse-no-touch .btn-flat.btn-hover .d-icon{
-    color: $fauna-cta;
+  .cakeday-link {display: none !important;}
+  .menu-container-general-links {display: none !important;}
+.menu-panel li a.widget-link:hover, .menu-panel li a.widget-link:focus, .menu-panel li.heading a.widget-link:hover, .menu-panel li.heading a.widget-link:focus,
+.menu-panel li.category-link:hover {
+    background-color: $lightest-grey;
 }
-.nav-pills>li>a{
-  color: $fauna-cta;
-  font-size: 1rem;
+  button[aria-label="Log In"] .fa.d-icon.d-icon-user.svg-icon.svg-string{
+      display: none; //temp fix for weird bug that causes signup/login buttons to be misaligned when one has an icon
 }
-.nav-pills>li>a:hover,
-.discourse-no-touch .btn:hover{
-  background: $lightest-grey;
-  color: $fauna-cta;
-  cursor:pointer;
-  .d-icon{
-      color: $fauna-cta;
-  }
-}
+
+//BUTTONS
 .btn .d-icon{color:inherit;}
 .btn-default{
     background:transparent;color:$default-color;
@@ -91,11 +83,49 @@ button[aria-label="Reply"]{
   }
   &:hover{box-shadow: $box-shadow;}
 }
+nav.post-controls button,
+nav.post-controls button.create{
+  color: $default-color;font-size:1rem;
+  .d-icon{
+      color: $default-color;
+  }
+  opacity:.7;
+  &:hover{opacity:1; color: $fauna-cta;}
+}
+.discourse-no-touch .btn-flat:hover .d-icon, .discourse-no-touch .btn-flat.btn-hover .d-icon{
+    color: $fauna-cta;
+}
+
+
+//TABS
+.nav-pills>li>a{
+  color: $fauna-cta;
+  font-size: 1rem;
+}
+.nav-pills>li>a:hover,
+.discourse-no-touch .btn:hover{
+  background: $lightest-grey;
+  color: $fauna-cta;
+  cursor:pointer;
+  .d-icon{
+      color: $fauna-cta;
+  }
+}
+.nav-pills>li a.active{
+  background: transparent;
+  color: $default-color;
+  .d-icon{
+      color:$default-color;
+  }
+  &:hover{
+      color: $default-color;
+      background: transparent;
+      cursor:default;
+  }
+}
+
 
 .list-controls .btn{  font-size:inherit;}
-
-
-
   .category-logo.aspect-image{
       max-width: 40px;
   }
@@ -121,6 +151,20 @@ button[aria-label="Reply"]{
       background: #ffffe6;
   }
 
+  .badge-wrapper, .category-name{
+      font-weight: inherit;
+      font-size:inherit;
+  }
+.category-name{font-size:inherit;}
+  .topic-list-main-link, .topic-list .main-link, .latest-topic-list-item .main-link{
+  font-size: initial;
+  }
+
+
+//TOPIC LIST/S, TABLES
+.sortable .d-icon {font-size:10px;}
+table th, table td {font-weight:inherit; color: $legible-grey;}
+
 .topic-list td, 
 .topic-list th { padding: 0; }
 .topic-list td:first-of-type {
@@ -132,23 +176,39 @@ button[aria-label="Reply"]{
 .topic-list-main-link a.title, .topic-list .main-link a.title, .latest-topic-list-item .main-link a.title
 {display: inline-flex; padding: 12px 0 4px 0}
 .topic-statuses{float:none;}
-  .topic-list th:first-of-type{
-      display: flex;
-      align-items: center;
-  }
-  .topic-list button.bulk-select,
-  .categories-list .category h3 .d-icon, .categories-list .category h4 .d-icon{
-      margin-right: 10px;
-  }
+.topic-list th:first-of-type{
+  display: flex;
+  align-items: center;
+}
+.topic-list button.bulk-select,
+.categories-list .category h3 .d-icon, .categories-list .category h4 .d-icon{
+  margin-right: 10px;
+}
 
-  .badge-wrapper, .category-name{
-      font-weight: inherit;
-      font-size:inherit;
-  }
-.category-name{font-size:inherit;}
-  .topic-list-main-link, .topic-list .main-link, .latest-topic-list-item .main-link{
-  font-size: initial;
-  }
+.topic-list th:first-of-type, .topic-list td:first-of-type {
+    padding-left: 0;
+}
+.link-top-line{
+    color: #083f79;
+    transition:$transition;
+    &:hover{ color: $fauna-cta; }
+}
+.topic-list-icons .d-icon-thumbtack, 
+.latest-topic-list .d-icon-thumbtack, 
+.top-topic-list .d-icon-thumbtack, 
+.topic-list .d-icon-thumbtack, 
+.topic-statuses .topic-status,
+.topic-list-main-link a.title, 
+.topic-list .main-link a.title, 
+.latest-topic-list-item .main-link a.title 
+{color: inherit;}
+.topic-list-item.visited a.title:not(.badge-notification), 
+.latest-topic-list-item.visited a.title:not(.badge-notification), 
+.category-topic-link.visited a.title:not(.badge-notification)
+{   color: #6f4e88;
+//     color: #6e698a;
+    &:hover{ color: $fauna-cta; }
+} 
 
 //TOPIC PAGE
 #topic-title{
@@ -176,59 +236,6 @@ button[aria-label="Reply"]{
         }
     }
 }
-
-// ADMIN
-.admin-controls .nav-pills>li a.active{ color: white }
-
-//NAV
-.d-header{
-    .extra-info-wrapper .header-title {font-size:1rem !important;}
-    .topic-statuses {display: none;}
-    .discourse-tags {display: flex; min-height: 25px;}
-    .extra-info-wrapper .categories-wrapper .badge-wrapper {position: relative;top: -1px;}
-}
-//MENU
-.menu-panel li a.widget-link, 
-.menu-panel li.heading a.widget-link {display: flex; align-items: center;
-    .menu-panel .badge-notification, .d-label {margin-left:5px;}
-}
-  .cakeday-link {display: none !important;}
-  .menu-container-general-links {display: none !important;}
-.menu-panel li a.widget-link:hover, .menu-panel li a.widget-link:focus, .menu-panel li.heading a.widget-link:hover, .menu-panel li.heading a.widget-link:focus,
-.menu-panel li.category-link:hover {
-    background-color: $lightest-grey;
-}
-  button[aria-label="Log In"] .fa.d-icon.d-icon-user.svg-icon.svg-string{
-      display: none; //temp fix for weird bug that causes signup/login buttons to be misaligned when one has an icon
-}
-
-//TOPIC LIST/S
-.topic-list th:first-of-type, .topic-list td:first-of-type {
-    padding-left: 0;
-}
-.link-top-line{
-    color:#1d1165;
-//     color: #6e698a;
-    transition:$transition;
-    &:hover{ color: $fauna-cta; }
-}
-.topic-list-icons .d-icon-thumbtack, 
-.latest-topic-list .d-icon-thumbtack, 
-.top-topic-list .d-icon-thumbtack, 
-.topic-list .d-icon-thumbtack, 
-.topic-statuses .topic-status,
-.topic-list-main-link a.title, 
-.topic-list .main-link a.title, 
-.latest-topic-list-item .main-link a.title 
-{color: inherit;}
-.topic-list-item.visited a.title:not(.badge-notification), 
-.latest-topic-list-item.visited a.title:not(.badge-notification), 
-.category-topic-link.visited a.title:not(.badge-notification)
-{   color: #6f4e88;
-//     color: #6e698a;
-    &:hover{ color: $fauna-cta; }
-} 
-
 
 //SUGGESTED TOPICS & FOOTER
 .suggested-topics-message{font-size:1rem;font-weight:inherit;}

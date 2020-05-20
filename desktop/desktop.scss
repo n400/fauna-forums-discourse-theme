@@ -217,6 +217,11 @@ h1,h2,h3,h4,h5,.suggested-topics-message { font-weight: 500;}
     // '#FF9800',
 }
 
+//REPLY
+#reply-control .save-or-cancel { justify-content: flex-end; flex-direction:row-reverse;
+    .cancel {margin-left:0;margin-right:1.25em;}
+}
+
 //ATTEMPT TO DE-CROWD
 .map.map-collapsed,
 .topic-timeline,

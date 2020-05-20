@@ -197,10 +197,11 @@ h1,h2,h3,h4,h5,.suggested-topics-message { font-weight: 500;}
 
 .select-kit.combo-box.mini-tag-chooser .selected-tags .selected-tag {}
 .discourse-tag.box{ 
-    font-size: 12px;
+    font-size: 12px !important;
     height: 18px;
-    display: inline-flex;
+    display: inline-flex !important;
     align-items: center;
+    padding: 0px 7px 2px 7px;
     background-color: #5280B1; 
     &[data-tag-name^="auth"]{ background-color: #8BC34A } 
     &[data-tag-name="dashboard"]{ background-color: #4CAF50 } 

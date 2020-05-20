@@ -153,6 +153,7 @@ h1,h2,h3,h4,h5,.suggested-topics-message { font-weight: 500;}
     .extra-info-wrapper .header-title {font-size:1rem !important;}
     .topic-statuses {display: none;}
     .discourse-tags {display: flex; min-height: 25px;}
+    .extra-info-wrapper .categories-wrapper .badge-wrapper {position: relative;top: -1px;}
 }
 //MENU
 .menu-panel li a.widget-link, 

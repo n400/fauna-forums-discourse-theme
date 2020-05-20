@@ -18,26 +18,25 @@ html {
     font-size: 16px;
     color: $font-color;
     font-weight: 300;
-  }
-  button, 
-  .modal-footer .btn[href],
-  .btn, input,
-  .list-controls .combo-box .combo-box-header{
-      &:focus{
-          outline:none;
-      }
-      border-radius:$border-radius;
-      min-height: 36px;
-      padding: 0 12px;
-      display: inline-flex;
-      align-items: center;
-  }
+}
   
 h1,h2,h3,h4,h5,.suggested-topics-message { font-weight: 500;}
 b,strong,.names span.first{font-weight:600;}
 #topic-title h1, .extra-info-wrapper{line-height: 1.35;}
   
-.btn, 
+button, 
+.modal-footer .btn[href],
+.btn, input,
+.list-controls .combo-box .combo-box-header{
+  &:focus{
+      outline:none;
+  }
+  border-radius:$border-radius;
+  min-height: 36px;
+  padding: 0 12px;
+  display: inline-flex;
+  align-items: center;
+}
 .nav-pills>li a.active{
       background: transparent;
       color: $default-color;
@@ -75,7 +74,7 @@ nav.post-controls button.create{
       color: $fauna-cta;
   }
 }
-  
+.btn-default{background:transparent;}
 .btn-primary,
 button[aria-label="New Topic"],
 button[aria-label="Open Draft"],

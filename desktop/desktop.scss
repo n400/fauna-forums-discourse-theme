@@ -40,7 +40,7 @@ button,
 }
 
 // ADMIN
-.admin-controls .nav-pills>li a.active{ color: white }
+.admin-controls .nav-pills>li a.active{ color: $legible-grey; }
 
 //NAV
 .d-header{
@@ -99,7 +99,7 @@ nav.post-controls button.create{
 
 //TABS
 .nav-pills>li>a{
-  color: $fauna-cta;
+  color: $legible-grey;
   font-size: 1rem;
 }
 .nav-pills>li>a:hover,
@@ -166,7 +166,7 @@ nav.post-controls button.create{
 table th, table td {font-weight:inherit; color: $legible-grey;}
 
 .topic-list td, 
-.topic-list th { padding: 0; }
+.topic-list th { padding: 0 4px; }
 .topic-list td:first-of-type {
     padding: 0 5px 12px 0;
 }

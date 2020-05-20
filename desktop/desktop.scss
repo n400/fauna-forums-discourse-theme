@@ -216,6 +216,15 @@ h1,h2,h3,h4,h5,.suggested-topics-message { font-weight: 500;}
     // '#FF5722',
     // '#FF9800',
 }
+// VOTE
+.title-voting{width:auto;}
+.voting-wrapper.show-pointer{
+    .btn-primary,
+    .vote-count-wrapper {height:34px;}
+    .btn-primary{background-color: #0eb788;}
+    .vote-count-wrapper{border: $border;}
+}
+// font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f007";
 
 //REPLY
 #reply-control .save-or-cancel { justify-content: flex-end; flex-direction:row-reverse;

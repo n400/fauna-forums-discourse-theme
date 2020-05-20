@@ -167,7 +167,14 @@ h1,h2,h3,h4,h5,.suggested-topics-message { font-weight: 500;}
 }
 .topic-footer-main-buttons {justify-content: flex-end;}
 .topic-notifications-button {display:flex;justify-content: flex-end;
-    .reason {flex-direction: row-reverse;}
+    .btn {margin-right:0;}
+    .reason {
+        flex-direction: row-reverse;
+        .dropdown-select-box-header{
+            padding:0;
+            &:hover{background-color:transparent;}
+        }
+    }
 }
 
 //TAGS

@@ -8,6 +8,7 @@ $border-radius: 0;
 $font-color: #444444; //#2c3160;
 $font-family: 'acumin-pro', Helvetica, sans-serif;
 $box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+$smallest-font: $12px;
 
 html {
     font-family: $font-family;
@@ -139,6 +140,11 @@ h1,h2,h3,h4,h5,.suggested-topics-message { font-weight: 500;}
   .topic-list-main-link, .topic-list .main-link, .latest-topic-list-item .main-link{
   font-size: initial;
   }
+
+//TOPIC PAGE
+.topic-title{
+    .category-name{font-size:$smallest-font;}
+}
   
   // ADMIN
   .admin-controls .nav-pills>li a.active{ color: white }
@@ -197,7 +203,7 @@ h1,h2,h3,h4,h5,.suggested-topics-message { font-weight: 500;}
 
 .select-kit.combo-box.mini-tag-chooser .selected-tags .selected-tag {}
 .discourse-tag.box{ 
-    font-size: 12px !important;
+    font-size: $smallest-font !important;
     height: 18px;
     display: inline-flex !important;
     align-items: center;

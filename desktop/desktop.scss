@@ -29,13 +29,8 @@ html {
       align-items: center;
   }
   
-h1,
-.suggested-topics-message { font-weight: 500;}
-#topic-title h1{line-height: 1.4;}
-  
-  h2,h3,h4,h5{
-      font-weight: 500;
-  }
+h1,h2,h3,h4,h5,.suggested-topics-message { font-weight: 500;}
+#topic-title h1, .extra-info-wrapper{line-height: 1.35;}
   
   .btn, 
   .nav-pills>li a.active{
@@ -145,6 +140,11 @@ h1,
   // ADMIN
   .admin-controls .nav-pills>li a.active{ color: white }
 
+//NAV
+.d-header{
+    .extra-info-wrapper .header-title {font-size:1rem !important;}
+    .topic-statuses {display: none;}
+}
 //MENU
 .menu-panel li a.widget-link, 
 .menu-panel li.heading a.widget-link {display: flex; align-items: center;
@@ -184,13 +184,13 @@ h1,
 .discourse-tag.box{ 
     background-color: #5280B1; 
     &[data-tag-name^="auth"]{ background-color: #8BC34A } 
-    &[data-tag-name="feature-request"]{ background-color: #4CAF50 } 
-    &[data-tag-name="fql"]{ background-color: #009688 } 
-    &[data-tag-name="graphql"]{ background-color: #00BCD4 } 
-    &[data-tag-name="js-driver"]{ background-color: #03A9F4 } 
-    &[data-tag-name="streaming"]{ background-color: #2196F3 } 
-    &[data-tag-name^="udf"]{ background-color: #3F51B5 } 
-    // '#673AB7',
+    &[data-tag-name="dashboard"]{ background-color: #4CAF50 } 
+    &[data-tag-name="feature-request"]{ background-color: #009688 } 
+    &[data-tag-name="fql"]{ background-color: #00BCD4 } 
+    &[data-tag-name="graphql"]{ background-color: #03A9F4 } 
+    &[data-tag-name="js-driver"]{ background-color: #2196F3 } 
+    &[data-tag-name="streaming"]{ background-color: #3F51B5 } 
+    &[data-tag-name^="udf"]{ background-color: #673AB7 } 
     // '#9C27B0',
     // '#E91E63',
     // '#F44336',

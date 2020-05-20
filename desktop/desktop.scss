@@ -165,7 +165,11 @@ h1,h2,h3,h4,h5,.suggested-topics-message { font-weight: 500;}
 .topic-list th:first-of-type, .topic-list td:first-of-type {
     padding-left: 0;
 }
-  
+.topic-footer-main-buttons {justify-content: flex-end;}
+.topic-notifications-button {display:flex;justify-content: flex-end;
+    .reason {flex-direction: row-reverse;}
+}
+
 //TAGS
 .topic-list .link-bottom-line a.badge-wrapper.box, 
 .topic-list .link-bottom-line a.discourse-tag.box {padding-bottom: 2px;}

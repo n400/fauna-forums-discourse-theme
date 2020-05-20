@@ -50,8 +50,7 @@ b,strong,.names span.first{font-weight:600;}
           cursor:default;
       }
 }
-nav.post-controls button, 
-nav.post-controls button .d-icon{
+nav.post-controls button{
   color: $default-color !important;
   .d-icon{
       color: $default-color;

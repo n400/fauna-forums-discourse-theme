@@ -208,10 +208,18 @@ button[aria-label="Reply"]{
 }
 .topic-list-item.visited a.title:not(.badge-notification), 
 .latest-topic-list-item.visited a.title:not(.badge-notification), 
-.category-topic-link.visited a.title:not(.badge-notification) {color: #6e698a;}
+.category-topic-link.visited a.title:not(.badge-notification) {
+    color: #6e698a;
+    transition:$transition;
+    &:hover{ color: $fauna-cta; }
+}
 .topic-list-main-link a.title, 
 .topic-list .main-link a.title, 
-.latest-topic-list-item .main-link a.title {color:#1d1165}
+.latest-topic-list-item .main-link a.title {
+    transition:$transition;
+    &:hover{ color: $fauna-cta; }
+    color:#1d1165;
+}
 
 
 //SUGGESTED TOPICS & FOOTER

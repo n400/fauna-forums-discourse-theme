@@ -6,6 +6,8 @@ $lightest-grey: #eff0f6;
 $border: 1px solid #e9e9e9;
 $border-radius: 0;
 $font-color: #444444; //#2c3160;
+$default-color: #6474af;
+$fauna-cta: #3642ce;
 $font-family: 'acumin-pro', Helvetica, sans-serif;
 $box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 $smallest-font: 12px;
@@ -38,36 +40,36 @@ b,strong,.names span.first{font-weight:600;}
 .btn, 
 .nav-pills>li a.active{
       background: transparent;
-      color: #6474af;
+      color: $default-color;
       .d-icon{
-          color:#6474af;
+          color:$default-color;
       }
       &:hover{
-          color: #6474af;
+          color: $default-color;
           background: transparent;
           cursor:default;
       }
 }
 nav.post-controls button, 
 nav.post-controls button .d-icon{
-  color: #6474af !important;
+  color: $default-color !important;
   .d-icon{
-      color:#6474af;
+      color: $default-color;
   }
   opacity:.7;
-  &:hover{opacity:1}
+  &:hover{opacity:1; color: $fauna-cta;}
 }
 .nav-pills>li>a{
-      color: #3642ce;
+      color: $fauna-cta;
   font-size: 1rem;
 }
 .nav-pills>li>a:hover,
 .discourse-no-touch .btn:hover{
   background: $lightest-grey;
-  color: #3642ce;
+  color: $fauna-cta;
   cursor:pointer;
   .d-icon{
-      color: #3642ce;
+      color: $fauna-cta;
   }
 }
   
@@ -148,7 +150,7 @@ button[aria-label="Reply"]{
     .category-name{font-size:$smallest-font;}
     h1 { font-size:24px; font-weight:400;
         a.edit-topic {
-            color: #6474af;
+            color: $default-color;
             font-size: .9em;
             opacity: .4;
             transition: $transition;

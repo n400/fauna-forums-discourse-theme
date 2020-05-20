@@ -166,8 +166,8 @@ h1,h2,h3,h4,h5,.suggested-topics-message { font-weight: 500;}
     padding-left: 0;
 }
 .topic-footer-main-buttons {justify-content: flex-end;}
+#topic-footer-buttons .topic-footer-main-buttons>.btn:last-of-type {margin-right:0;}
 .topic-notifications-button {display:flex;justify-content: flex-end;
-    .btn:last-of-type {margin-right:0;}
     .reason {
         flex-direction: row-reverse;
         .dropdown-select-box-header{

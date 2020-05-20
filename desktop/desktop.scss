@@ -59,8 +59,11 @@ nav.post-controls button.create{
   opacity:.7;
   &:hover{opacity:1; color: $fauna-cta;}
 }
+.discourse-no-touch .btn-flat:hover .d-icon, .discourse-no-touch .btn-flat.btn-hover .d-icon{
+    color: $fauna-cta;
+}
 .nav-pills>li>a{
-      color: $fauna-cta;
+  color: $fauna-cta;
   font-size: 1rem;
 }
 .nav-pills>li>a:hover,

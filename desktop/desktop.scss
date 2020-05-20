@@ -82,7 +82,7 @@ nav.post-controls button.create{
 button[aria-label="New Topic"],
 button[aria-label="Open Draft"],
 button[aria-label="Reply"]{
-  background:#323fcb;
+  background: $tertiary;
   color:rgba(255,255,255,.9);
   height: 44px;
   padding:0 18px;

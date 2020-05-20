@@ -57,7 +57,7 @@ nav.post-controls button .d-icon{
       color: $default-color;
   }
   opacity:.7;
-  &:hover{opacity:1; color: $fauna-cta;}
+  &:hover{opacity:1; color: $fauna-cta !important;}
 }
 .nav-pills>li>a{
       color: $fauna-cta;

@@ -129,13 +129,12 @@ h1,h2,h3,h4,h5,.suggested-topics-message { font-weight: 500;}
   .categories-list .category h3 .d-icon, .categories-list .category h4 .d-icon{
       margin-right: 10px;
   }
-  .extra-info-wrapper .header-title {
-      font-size: 1.17em;
+
+  .badge-wrapper, .category-name{
+      font-size: $smallest-font;
+      font-weight: inherit;
   }
-  
-  .badge-wrapper{
-      font-size: 1em;
-  }
+.menu-panel .category-name {font-size: 1rem;}
   
   .topic-list-main-link, .topic-list .main-link, .latest-topic-list-item .main-link{
   font-size: initial;

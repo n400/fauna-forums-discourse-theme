@@ -174,25 +174,21 @@ h1,
 .select-kit .select-kit-row .discourse-tag-count
 { border-radius: $border-radius; margin: 1px 2px 1px 0; color: rgba(255,255,255,.95);}
 
-[data-tag-name="fql"]{ background-color: #3F51B5 !important} 
-[data-tag-name="graphql"]{ background-color: #03A9F4 !important} 
-[data-tag-name="authentication"]{ background-color: #00BCD4 !important} 
-[data-tag-name="dashboard"]{ background-color: #009688 !important} 
-[data-tag-name="streaming"]{ background-color: #4CAF50 !important} 
-[data-tag-name="roadmap"]{ background-color: #8BC34A !important} 
-//     '#2196F3',
-//     '#03A9F4',
-//     '#00BCD4',
-//     '#009688',
-//     '#4CAF50',
-//     '#8BC34A',
-//     '#CDDC39',
-//     '#FFEB3B',
-//     '#FFC107',
-//     '#FF9800',
-//     '#FF5722',
-//     '#F44336',
-//     '#E91E63',
-//     '#9C27B0',
-//     '#673AB7',
-//     '#3F51B5'
+.select-kit.combo-box.mini-tag-chooser .selected-tags .selected-tag {}
+.discourse-tag.box{ 
+    background-color: #5280B1; 
+    &[data-tag-name^="auth"]{ background-color: #8BC34A } 
+    &[data-tag-name="feature-request"]{ background-color: #4CAF50 } 
+    &[data-tag-name="fql"]{ background-color: #009688 } 
+    &[data-tag-name="graphql"]{ background-color: #00BCD4 } 
+    &[data-tag-name="js-driver"]{ background-color: #03A9F4 } 
+    &[data-tag-name="streaming"]{ background-color: #2196F3 } 
+    &[data-tag-name^="udf"]{ background-color: #3F51B5 } 
+    // '#673AB7',
+    // '#9C27B0',
+    // '#E91E63',
+    // '#F44336',
+    // '#FF5722',
+    // '#FF9800',
+}
+

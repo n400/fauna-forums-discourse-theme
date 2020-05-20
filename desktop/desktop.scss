@@ -74,7 +74,12 @@ nav.post-controls button.create{
       color: $fauna-cta;
   }
 }
-.btn-default{background:transparent;color:$default-color;}
+.btn-default{
+    background:transparent;color:$default-color;
+    .d-icon{
+      color:$default-color;
+    }
+}
 .btn-primary,
 button[aria-label="New Topic"],
 button[aria-label="Open Draft"],

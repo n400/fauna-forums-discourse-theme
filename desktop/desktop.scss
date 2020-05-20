@@ -74,11 +74,9 @@ nav.post-controls button.create{
       color: $fauna-cta;
   }
 }
+.btn .d-icon{color:inherit;}
 .btn-default{
     background:transparent;color:$default-color;
-    .d-icon{
-      color:$default-color;
-    }
 }
 .btn-primary,
 button[aria-label="New Topic"],

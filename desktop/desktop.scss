@@ -162,11 +162,9 @@ button[aria-label="Reply"]{
 }
 #topic-footer-buttons{
     &>div{
-        justify-content: flex-end;
+        display:flex;justify-content: flex-end;
     }
     .topic-footer-main-buttons>.btn:last-of-type {margin-right:0;}
-}
-.topic-notifications-button {
     .reason {
         flex-direction: row-reverse;
         .dropdown-select-box-header{
@@ -175,7 +173,7 @@ button[aria-label="Reply"]{
         }
     }
 }
-  
+
 // ADMIN
 .admin-controls .nav-pills>li a.active{ color: white }
 

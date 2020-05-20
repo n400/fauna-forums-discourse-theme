@@ -187,9 +187,14 @@ h1,h2,h3,h4,h5,.suggested-topics-message { font-weight: 500;}
     }
 }
 
-//SUGGESTED TOPICS
+//SUGGESTED TOPICS & FOOTER
 .suggested-topics-message{font-size:1rem;font-weight:inherit;}
 .footer-message h3{font-weight:inherit;}
+#topic-progress{ 
+    display:flex;align-items:center;
+    .nums {position:initial;}
+    h4{font-weight:inherit;font-size:1rem;}
+}
 
 //TAGS
 .topic-list .link-bottom-line a.badge-wrapper.box, 

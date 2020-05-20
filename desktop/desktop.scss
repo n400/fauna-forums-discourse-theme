@@ -127,10 +127,9 @@ h1,h2,h3,h4,h5,.suggested-topics-message { font-weight: 500;}
 
   .badge-wrapper, .category-name{
       font-weight: inherit;
+      font-size:inherit;
   }
 .category-name{font-size:inherit;}
-// .menu-panel .category-name {font-size: 1rem;}
-  
   .topic-list-main-link, .topic-list .main-link, .latest-topic-list-item .main-link{
   font-size: initial;
   }
@@ -192,6 +191,7 @@ h1,h2,h3,h4,h5,.suggested-topics-message { font-weight: 500;}
 .footer-message h3{font-weight:inherit;}
 #topic-progress{ 
     display:flex;align-items:center;
+    height: 22px;top: 7px;
     .nums {position:initial;}
     h4{font-weight:inherit;font-size:1rem;}
 }

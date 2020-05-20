@@ -207,24 +207,24 @@ button[aria-label="Reply"]{
     padding-left: 0;
 }
 .link-top-line{
-     color:#1d1165;
+    color:#1d1165;
 //     color: #6e698a;
+    transition:$transition;
     &:hover{ color: $fauna-cta; }
 }
-.topic-list-item.visited a.title:not(.badge-notification), 
-.latest-topic-list-item.visited a.title:not(.badge-notification), 
-.category-topic-link.visited a.title:not(.badge-notification) {
-    color: inherit;
-    transition:$transition;
-    //     color: #6e698a;
-}
+.topic-list-icons .d-icon-thumbtack, 
+.latest-topic-list .d-icon-thumbtack, 
+.top-topic-list .d-icon-thumbtack, 
+.topic-list .d-icon-thumbtack, 
+.topic-statuses .topic-status,
 .topic-list-main-link a.title, 
 .topic-list .main-link a.title, 
-.latest-topic-list-item .main-link a.title {
-    transition:$transition;
-    color: inherit;
-//     color:#1d1165;
-}
+.latest-topic-list-item .main-link a.title 
+{color: inherit;}
+.topic-list-item.visited a.title:not(.badge-notification), 
+.latest-topic-list-item.visited a.title:not(.badge-notification), 
+.category-topic-link.visited a.title:not(.badge-notification)
+{color: #6e698a;} 
 
 
 //SUGGESTED TOPICS & FOOTER

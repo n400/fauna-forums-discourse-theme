@@ -176,8 +176,9 @@ h1,
 .select-kit .select-kit-row .discourse-tag-count,
 .topic-list-item.visited a.discourse-tag, 
 .latest-topic-list-item.visited a.discourse-tag, 
-.category-topic-link.visited a.discourse-tag
-{ border-radius: $border-radius; margin: 1px 2px 1px 0; color: rgba(255,255,255,.95);}
+.category-topic-link.visited a.discourse-tag,
+.extra-info-wrapper .discourse-tag
+{ border-radius: $border-radius; margin: 1px 2px 1px 0; color: rgba(255,255,255,.95) !important;}
 
 .select-kit.combo-box.mini-tag-chooser .selected-tags .selected-tag {}
 .discourse-tag.box{ 

@@ -168,7 +168,7 @@ table th, table td {font-weight:inherit; color: $legible-grey;}
     padding: 0 0 12px 0;
 }
 .topic-list-main-link a.title, .topic-list .main-link a.title, .latest-topic-list-item .main-link a.title
-{display: inline-flex; padding: 12px 0 4px 0}
+{display: inline; padding: 12px 0 4px 0}
 .topic-statuses{float:none;}
 .topic-list th:first-of-type{
   display: flex;

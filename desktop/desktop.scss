@@ -50,7 +50,7 @@ button,
     .discourse-tags {display: flex; min-height: 25px;}
     .extra-info-wrapper .categories-wrapper .badge-wrapper {position: relative;top: -1px;}
 }
-.d-header #site-logo { max-width: 200px; }
+.d-header #site-logo { max-width: 200px; min-width: 150px; }
 
 //MENU
 .menu-panel li a.widget-link, 

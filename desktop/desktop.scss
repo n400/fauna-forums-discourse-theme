@@ -236,6 +236,11 @@ table th, table td {font-weight:inherit; color: $legible-grey;}
         }
     }
 }
+.quote-controls {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
 
 //SUGGESTED TOPICS & FOOTER
 .suggested-topics{

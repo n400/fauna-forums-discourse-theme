@@ -165,12 +165,14 @@ nav.post-controls button.create{
 .nav-pills>li>a:hover,
 .discourse-no-touch .btn:hover{
   background-color:inherit;
-  color:$default-color;
   opacity: 0.8;
   cursor:pointer;
   .d-icon{
     color:$default-color;
   }
+}
+.nav-pills>li>a:hover{
+    color:$default-color;
 }
 .nav-pills>li a.active{
   background: transparent;

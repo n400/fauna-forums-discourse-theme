@@ -155,6 +155,12 @@ nav.post-controls button.create{
     background: inherit; opacity:1;}
 }
 
+.copy-codeblocks .btn .nohighlight .copy-cmd{
+    color: $default-color;
+    background: transparent;
+    height: 44px;
+    width: 44px;
+}
 
 
 //TABS

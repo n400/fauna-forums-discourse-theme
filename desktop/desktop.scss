@@ -120,9 +120,9 @@ nav.post-controls button.create{
   opacity:.7;
   &:hover{opacity:1; color: $fauna-cta;}
 }
-.discourse-no-touch .btn-flat:hover .d-icon, .discourse-no-touch .btn-flat.btn-hover .d-icon{
-    color: $fauna-cta;
-}
+// .discourse-no-touch .btn-flat:hover .d-icon, .discourse-no-touch .btn-flat.btn-hover .d-icon{
+//     color: $fauna-cta;
+// }
 
 
 //TABS
@@ -130,15 +130,15 @@ nav.post-controls button.create{
   color: $legible-grey;
   font-size: 1rem;
 }
-.nav-pills>li>a:hover,
-.discourse-no-touch .btn:hover{
-  background: $lightest-grey;
-  color: $fauna-cta;
-  cursor:pointer;
-  .d-icon{
-      color: $fauna-cta;
-  }
-}
+// .nav-pills>li>a:hover,
+// .discourse-no-touch .btn:hover{
+//   background: $lightest-grey;
+//   color: $fauna-cta;
+//   cursor:pointer;
+//   .d-icon{
+//       color: $fauna-cta;
+//   }
+// }
 .nav-pills>li a.active{
   background: transparent;
   color: $default-color;

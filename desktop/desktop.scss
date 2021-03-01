@@ -243,7 +243,7 @@ table th, table td {font-weight:inherit; color: $legible-grey;}
 }
 .topic-list-main-link a.title, .topic-list .main-link a.title, .latest-topic-list-item .main-link a.title
 {display: inline; padding: 12px 0 4px 0}
-.topic-statuses{float:none;}
+.topic-statuses{float:none;padding-top:12px;}
 .topic-list th:first-of-type{
   display: flex;
   align-items: center;
@@ -283,7 +283,9 @@ table th, table td {font-weight:inherit; color: $legible-grey;}
     line-height: 1.3;
     font-size: 1.1487em;
 }
-
+.badge-notification {
+    padding: 0.2em 0.42em .35em;
+}
 //TOPIC PAGE
 #topic-title{
     .category-name{font-size:$smallest-font;}

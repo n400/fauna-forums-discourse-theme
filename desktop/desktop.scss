@@ -155,11 +155,15 @@ nav.post-controls button.create{
     background: inherit; opacity:1;}
 }
 
-.copy-codeblocks .btn .nohighlight .copy-cmd{
+.copy-codeblocks .copy-cmd{
     color: $default-color;
     background: transparent;
     height: 44px;
     width: 44px;
+    &:hover{
+        background-color:transparent;
+        opacity:0.8;
+    }
 }
 
 

@@ -162,7 +162,9 @@ nav.post-controls button.create{
     width: 44px;
     &:hover{
         background:transparent;
-        color:$default-color;
+        .d-icon{
+            color:$default-color;
+        }
     }
 }
 

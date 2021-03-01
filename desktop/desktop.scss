@@ -69,7 +69,7 @@ button,
 
 
 // FORM ELEMENTS
-.custom-search-banner-wrap .search-menu input[type="text"], button, input, 
+.custom-search-banner-wrap .search-menu input[type="text"], button, .btn, input, 
 optgroup, select, textarea, input[type="text"], input[type="password"], 
 input[type="datetime"], input[type="datetime-local"], input[type="date"], 
 input[type="month"], input[type="time"], input[type="week"], input[type="number"], 
@@ -79,6 +79,16 @@ input[type="color"]  {
     border-radius: $border-radius;
     min-height: 44px;
     border-color: #e8edfe;
+}
+
+//hero search element
+.custom-search-banner-wrap .search-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    .btn .d-icon{
+        color: #813EEF;
+    }
 }
 
 
@@ -91,9 +101,10 @@ input[type="color"]  {
 button[aria-label="New Topic"],
 button[aria-label="Open Draft"],
 button[aria-label="Reply"]{
+  &:hover{opacity:0.8;}
   background: linear-gradient(90deg,#3F00A5 0%,#813EEF 100%);
   color:rgba(255,255,255,.9);
-  height: 44px;
+//   height: 44px;
   padding:0 18px;
   .d-icon{
       color:rgba(255,255,255,.9);

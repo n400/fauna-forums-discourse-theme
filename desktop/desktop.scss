@@ -161,8 +161,8 @@ nav.post-controls button.create{
     height: 44px;
     width: 44px;
     &:hover{
-        background-color:transparent;
-        opacity:0.8;
+        background:transparent;
+        color:$default-color;
     }
 }
 

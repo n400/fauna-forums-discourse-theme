@@ -7,7 +7,7 @@ $lightest-grey: #eff0f6;
 $border: 1px solid #e9e9e9;
 $border-radius: 4px;
 $font-color: #333; //#2c3160;
-$default-color: #6474af;
+$default-color: #4001a4;
 $fauna-cta: $tertiary;
 $font-family: 'acumin-pro', Helvetica, sans-serif;
 $box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
@@ -65,6 +65,13 @@ button,
 }
   button[aria-label="Log In"] .fa.d-icon.d-icon-user.svg-icon.svg-string{
       display: none; //temp fix for weird bug that causes signup/login buttons to be misaligned when one has an icon
+}
+
+//LINKS
+a{color:$default-color}
+#reply-control .save-or-cancel .cancel:hover, 
+#reply-control .save-or-cancel .cancel:focus{
+    color: $default-color;
 }
 
 
@@ -132,6 +139,13 @@ nav.post-controls button.create{
 .discourse-no-touch .btn-flat.btn-hover .d-icon{
     background: linear-gradient(90deg,#3F00A5 0%,#813EEF 100%);
     color:rgba(255,255,255,.9);
+}
+
+//EDITOR
+.d-editor-button-bar {
+    .discourse-no-touch .btn-flat:hover .d-icon, 
+.discourse-no-touch .btn-flat.btn-hover .d-icon{
+    background: inherit; color: $default-color; opacity:1;}
 }
 
 

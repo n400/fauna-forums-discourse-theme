@@ -68,7 +68,13 @@ button,
 }
 
 //LINKS
-a{color:$default-color}
+a{
+    color:$default-color
+    &:hover{
+        color:$default-color;
+        opacity:0.8;
+    }
+}
 #reply-control .save-or-cancel .cancel:hover, 
 #reply-control .save-or-cancel .cancel:focus{
     color: $default-color;
@@ -76,6 +82,7 @@ a{color:$default-color}
 
 
 // FORM ELEMENTS
+.select-kit.combo-box.mini-tag-chooser .select-kit-header,
 .custom-search-banner-wrap .search-menu input[type="text"], 
 #reply-control .category-input .category-chooser .select-kit-header,
 button, .btn, input, 
@@ -157,10 +164,12 @@ nav.post-controls button.create{
 }
 .nav-pills>li>a:hover,
 .discourse-no-touch .btn:hover{
+  background-color:inherit;
+  color:$default-color;
   opacity: 0.8;
   cursor:pointer;
   .d-icon{
-    //   color: $fauna-cta;
+    color:$default-color;
   }
 }
 .nav-pills>li a.active{

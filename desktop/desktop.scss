@@ -128,7 +128,7 @@ nav.post-controls button.create{
 }
 .discourse-no-touch .btn-flat:hover .d-icon, 
 .discourse-no-touch .btn-flat.btn-hover .d-icon{
-    color: $fauna-cta;
+    // color: $fauna-cta;
 }
 
 
@@ -140,11 +140,10 @@ nav.post-controls button.create{
 }
 .nav-pills>li>a:hover,
 .discourse-no-touch .btn:hover{
-  background: $lightest-grey;
-  color: $fauna-cta;
+  opacity: 0.8;
   cursor:pointer;
   .d-icon{
-      color: $fauna-cta;
+    //   color: $fauna-cta;
   }
 }
 .nav-pills>li a.active{

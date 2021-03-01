@@ -116,6 +116,8 @@ button[aria-label="Reply"]{
 .discourse-no-touch .btn:hover, 
 .discourse-no-touch .btn.btn-hover{
   opacity:0.8;
+  background: linear-gradient(90deg,#3F00A5 0%,#813EEF 100%);
+  color:rgba(255,255,255,.9);
 }
 nav.post-controls button,
 nav.post-controls button.create{
@@ -128,7 +130,8 @@ nav.post-controls button.create{
 }
 .discourse-no-touch .btn-flat:hover .d-icon, 
 .discourse-no-touch .btn-flat.btn-hover .d-icon{
-    // color: $fauna-cta;
+    background: linear-gradient(90deg,#3F00A5 0%,#813EEF 100%);
+    color:rgba(255,255,255,.9);
 }
 
 

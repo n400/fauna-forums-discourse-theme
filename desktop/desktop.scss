@@ -69,7 +69,9 @@ button,
 
 
 // FORM ELEMENTS
-.custom-search-banner-wrap .search-menu input[type="text"], button, .btn, input, 
+.custom-search-banner-wrap .search-menu input[type="text"], 
+#reply-control .category-input .category-chooser .select-kit-header,
+button, .btn, input, 
 optgroup, select, textarea, input[type="text"], input[type="password"], 
 input[type="datetime"], input[type="datetime-local"], input[type="date"], 
 input[type="month"], input[type="time"], input[type="week"], input[type="number"], 
@@ -101,7 +103,7 @@ input[type="color"]  {
 button[aria-label="New Topic"],
 button[aria-label="Open Draft"],
 button[aria-label="Reply"]{
-  &:hover{opacity:0.8;}
+  &:hover{  background: linear-gradient(90deg,#3F00A5 0%,#813EEF 100%); opacity:0.8;}
   background: linear-gradient(90deg,#3F00A5 0%,#813EEF 100%);
   color:rgba(255,255,255,.9);
 //   height: 44px;
@@ -110,6 +112,10 @@ button[aria-label="Reply"]{
       color:rgba(255,255,255,.9);
   }
   &:hover{box-shadow: $box-shadow;}
+}
+.discourse-no-touch .btn:hover, 
+.discourse-no-touch .btn.btn-hover{
+  opacity:0.8;
 }
 nav.post-controls button,
 nav.post-controls button.create{
@@ -120,25 +126,27 @@ nav.post-controls button.create{
   opacity:.7;
   &:hover{opacity:1; color: $fauna-cta;}
 }
-// .discourse-no-touch .btn-flat:hover .d-icon, .discourse-no-touch .btn-flat.btn-hover .d-icon{
-//     color: $fauna-cta;
-// }
+.discourse-no-touch .btn-flat:hover .d-icon, 
+.discourse-no-touch .btn-flat.btn-hover .d-icon{
+    color: $fauna-cta;
+}
 
 
 //TABS
 .nav-pills>li>a{
   color: $legible-grey;
   font-size: 1rem;
+  border-radius: $border-radius;
 }
-// .nav-pills>li>a:hover,
-// .discourse-no-touch .btn:hover{
-//   background: $lightest-grey;
-//   color: $fauna-cta;
-//   cursor:pointer;
-//   .d-icon{
-//       color: $fauna-cta;
-//   }
-// }
+.nav-pills>li>a:hover,
+.discourse-no-touch .btn:hover{
+  background: $lightest-grey;
+  color: $fauna-cta;
+  cursor:pointer;
+  .d-icon{
+      color: $fauna-cta;
+  }
+}
 .nav-pills>li a.active{
   background: transparent;
   color: $default-color;

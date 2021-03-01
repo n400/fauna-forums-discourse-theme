@@ -155,7 +155,7 @@ nav.post-controls button.create{
     background: inherit; opacity:1;}
 }
 
-.copy-codeblocks .copy-cmd{
+.copy-codeblocks .copy-cmd, .copy-codeblocks .copy-cmd.copied{
     color: $default-color;
     background: transparent;
     height: 44px;
